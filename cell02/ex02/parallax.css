@@ -1,0 +1,23 @@
+.img1, .img2 {
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.img1 {
+    background-image: url(https://i.pinimg.com/1200x/8c/60/87/8c6087b8a71b73492ab09e4e62ab92d2.jpg);
+}
+.img2 {
+    background-image: url(https://i.pinimg.com/736x/59/93/2d/59932db9ad7351b5184eb12c7c1690be.jpg);
+}
+
+.blackbox {
+    background-color: black;
+}
+
+.img1, .img2, .blackbox {
+    height: 500px;
+    display: flex; /* Enables modern centering */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
