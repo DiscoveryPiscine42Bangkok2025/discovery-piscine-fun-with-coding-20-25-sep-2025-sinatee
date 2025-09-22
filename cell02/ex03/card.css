@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+
+}
+
+.pic {
+    width: 350px;
+    height: 300px;
+}
+
+.text {
+    color: #888;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
