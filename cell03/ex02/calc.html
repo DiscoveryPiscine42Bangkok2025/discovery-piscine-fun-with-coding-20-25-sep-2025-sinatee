@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input id="num1">
+
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+
+    <input id="num2">
+
+    <button id="button">Try me!</button>
+
+    <script>
+        // setInterval(function() {
+        //     alert("Please, use me...");
+        // }, 30000);
+
+        document.getElementById('button').onclick = function() {
+            let num1 = parseInt(document.getElementById('num1').value);
+            let num2 = parseInt(document.getElementById('num2').value);
+            let operator = document.getElementById('operator').value;
+
+            if (num1 < 0 || num2 < 0 || isNaN(num1) || isNaN(num2)) {
+                alert('Error :(');
+                return;
+            }
+
+            if ((operator === '/' || operator === '%') && num2 === 0) {
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+                return;
+            }
+
+            let result = 0;
+            if (operator === '+') result = num1 + num2;
+            else if (operator === '-') result = num1 - num2;
+            else if (operator === '*') result = num1 * num2;
+            else if (operator === '/') result = num1 / num2;
+            else if (operator === '%') result = num1 % num2;
+
+            alert(result);
+            console.log(result);
+        };
+    </script>
+
+</body>
+</html>
