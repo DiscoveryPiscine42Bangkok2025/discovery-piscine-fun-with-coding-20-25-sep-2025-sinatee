@@ -19,14 +19,13 @@ img {
 }
 
 .header {
-    position: fixed;
-    /* Keep the header at the top */
+    position: fixed; 
+    /* locks the header to the top of the screen */
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* Pushes logo and menu to opposite ends */
     align-items: center;
     padding: 1.5rem 2rem;
     z-index: 1000;
@@ -59,9 +58,7 @@ img {
     text-align: center;
     color: white;
     padding: 2rem;
-    /* Add your hero background image here */
     background-image: url('img/background.jpg');
-    /* CHANGE THIS TO YOUR IMAGE */
     background-size: cover;
     background-position: center;
 }
